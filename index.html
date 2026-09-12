@@ -13,7 +13,7 @@
     <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
     <link rel="manifest" href="/manifest.webmanifest">
-    <link rel="stylesheet" href="/assets/styles.css?v=62bc80ef0a46">
+    <link rel="stylesheet" href="/assets/styles.css?v=1088b7054002">
 
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="ANCHR">
@@ -35,7 +35,35 @@
   "url": "https://anchr.life/",
   "applicationCategory": "LifestyleApplication",
   "operatingSystem": "Web",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
   "description": "A calm daily system for leading your family with intention through three personal actions, thoughtful guidance, and a clearer view of the time that matters."
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "ANCHR",
+  "url": "https://anchr.life/",
+  "email": "hello@anchr.life",
+  "description": "A founder-led daily practice for intentional fatherhood. ANCHR (anchr.life) is not ANCHOR Assessment."
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "Is ANCHR free?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. You can start free at app.anchr.life, with no credit card."}},
+    {"@type": "Question", "name": "How much time does it take?", "acceptedAnswer": {"@type": "Answer", "text": "Three personal actions a day. The point is a focused rhythm—not another system that asks you to manage a second job at home."}},
+    {"@type": "Question", "name": "Is our family information private?", "acceptedAnswer": {"@type": "Answer", "text": "Your family data stays private. ANCHR does not sell it or use it to build marketing profiles. Details are in the privacy policy."}},
+    {"@type": "Question", "name": "Who is ANCHR for?", "acceptedAnswer": {"@type": "Answer", "text": "Fathers who want to lead their family, not just provide for it. If you already care and still feel the drift, this is the infrastructure."}},
+    {"@type": "Question", "name": "Is ANCHR the same as ANCHOR Assessment?", "acceptedAnswer": {"@type": "Answer", "text": "No. ANCHR (anchr.life) is a daily fatherhood practice for married dads. It is not ANCHOR Assessment, an unrelated product by another brand."}}
+  ]
 }
 </script>
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""><link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet"><script src="/assets/dates.js?v=cde914040f23" defer></script><script src="/assets/app.js?v=3f74af153550" defer></script></head>
@@ -50,7 +78,7 @@
   <p class="hero-description">You plan for everything.<br>Make room for what matters.</p>
   <p class="hero-detail">A simple framework to show up for your marriage, your children, and yourself. One meaningful action at a time.</p>
   <div class="hero-actions"><a class="button" href="https://app.anchr.life/">Start free <span aria-hidden="true">↗</span></a><a class="text-link" href="#product">See inside ANCHR <span aria-hidden="true">↓</span></a></div>
-  <p class="small-note">Three actions a day. Built around your family.</p>
+  <p class="small-note">Three actions a day. Free to start. <a href="/privacy/">Family details stay private</a>.</p>
  </div>
  <figure class="hero-visual"><img src="/assets/family-coast-1536.webp" srcset="/assets/family-coast-768.webp 768w, /assets/family-coast-1536.webp 1536w" sizes="(max-width: 760px) 100vw, 50vw" alt="A father and two children walking hand in hand along a coastal path at sunset." fetchpriority="high" width="1536" height="1024"><figcaption><span class="eyebrow">The moments are the point.</span><span>Less autopilot.<br><em>More together.</em></span></figcaption></figure>
 </section>
@@ -153,8 +181,15 @@
 <div class="time-card"><form id="time-form" class="time-form"><div class="field"><label for="child-name">Child’s name <span>(optional)</span></label><input type="text" id="child-name" maxlength="40" autocomplete="off" placeholder="First name"></div><div class="field"><label for="child-birth">Date of birth</label><input type="date" id="child-birth" required aria-describedby="time-error"></div><button class="button" type="submit">See the weeks <span aria-hidden="true">↗</span></button></form><p id="time-error" class="form-status" role="alert"></p><p class="privacy-note">This calculation stays in your browser. Names and birthdays are not sent or saved. <a href="/privacy/">Privacy details</a></p>
 <div id="time-placeholder" class="time-placeholder"><span class="mini-grid" aria-hidden="true"></span><p>A different way to look at the calendar.<br><strong>Every square is one week.</strong></p></div>
 <div id="time-results" hidden><div class="result-top"><div><p id="time-context"></p><div class="time-number" id="weeks-value"></div><h3 id="weeks-label">weeks before turning 18</h3></div><div class="remaining-stats"><p><strong id="saturdays-value"></strong><span>Saturdays</span></p><p><strong id="days-value"></strong><span>Calendar days</span></p></div></div><p id="adult-note" class="result-note" hidden>The 18-year milestone has passed. Your time together keeps mattering, at every age.</p><div class="week-grid" id="week-grid" role="img" aria-label="Weeks before age 18"></div><div class="grid-legend"><span><i class="past"></i>Weeks passed</span><span><i class="current"></i>This week</span><span><i class="future"></i>Weeks ahead</span></div><p class="small-note">Calendar estimate to age 18; not a prediction of when your child will leave home. The last square may be a partial week.</p><button type="button" class="text-link reset-time" id="reset-time">Try another birthday <span aria-hidden="true">↻</span></button></div></div>
-</div></section><section id="about" class="section section--surface" aria-labelledby="coach-title">
-  <div class="container coach-layout">
+</div></section><section id="about" class="section section--surface" aria-labelledby="company-title">
+  <div class="container">
+    <div class="company-intro reveal">
+      <span class="eyebrow">The company</span>
+      <h2 id="company-title" class="display heading-lg">A founder-led practice for intentional fatherhood.</h2>
+      <p class="lede">ANCHR is an independent product for married dads who already care and still feel the drift. We build a finite daily system—not a feed, not a guilt campaign, and not an assessment under another name.</p>
+      <a class="text-link" href="/about/">More about ANCHR <span aria-hidden="true">→</span></a>
+    </div>
+    <div class="coach-layout">
     <div class="coach-card reveal" aria-label="Example ANCHR Coach conversation">
       <div class="coach-card__header">
         <div class="coach-identity">
@@ -200,6 +235,7 @@
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="9" rx="2" /><path d="M8 11V8a4 4 0 0 1 8 0v3" /></svg>
         Your family data is not sold or used to build marketing profiles.
       </p>
+    </div>
     </div>
   </div>
 </section>
@@ -315,7 +351,7 @@
     <div class="faq-list reveal">
       <details class="faq-item">
         <summary>Is ANCHR free?</summary>
-        <div class="faq-item__answer">Yes. You can start free, with no credit card. Paid plans unlock additional features if you want them later.</div>
+        <div class="faq-item__answer">Yes. You can start free at <a href="https://app.anchr.life/">app.anchr.life</a>, with no credit card.</div>
       </details>
       <details class="faq-item">
         <summary>How much time does it take?</summary>
@@ -323,11 +359,15 @@
       </details>
       <details class="faq-item">
         <summary>Is our family information private?</summary>
-        <div class="faq-item__answer">Your family data stays private. ANCHR does not sell it or use it to build marketing profiles. Details are in the privacy policy.</div>
+        <div class="faq-item__answer">Your family data stays private. ANCHR does not sell it or use it to build marketing profiles. Details are in the <a href="/privacy/">privacy policy</a>.</div>
       </details>
       <details class="faq-item">
         <summary>Who is ANCHR for?</summary>
         <div class="faq-item__answer">Fathers who want to lead their family, not just provide for it. If you already care and still feel the drift, this is the infrastructure.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Is ANCHR the same as “ANCHOR Assessment”?</summary>
+        <div class="faq-item__answer">No. ANCHR (anchr.life) is a daily fatherhood practice for married dads. It is not ANCHOR Assessment, an unrelated product by another brand.</div>
       </details>
     </div>
   </div>
@@ -337,7 +377,7 @@
       <div class="cta-panel__copy">
         <span class="eyebrow">Start with today</span>
         <h2 class="display heading-md">The days are long. <em>The years are short.</em></h2>
-        <p class="lede">Create your free account, add the people who matter, and get three clear actions for the day in front of you.</p>
+        <p class="lede">Start free, add the people who matter, and get three clear actions for the day in front of you.</p>
         <ol class="next-step" aria-label="What happens next">
           <li>Create an account</li>
           <li>Add your family</li>
@@ -346,10 +386,11 @@
       </div>
       <div class="cta-panel__actions">
         <a class="button button--light button--large" href="https://app.anchr.life/">
-          Create your account
+          Start free
           <svg data-arrow="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
         </a>
         <a class="button button--ghost button--large cta-login" href="https://app.anchr.life/">Log in</a>
+        <p class="privacy-note cta-panel__trust">No credit card. Family details stay private. <a href="/privacy/">Privacy</a></p>
       </div>
     </div>
   </div>
