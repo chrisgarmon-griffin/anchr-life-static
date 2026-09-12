@@ -31,3 +31,21 @@ footer{padding-top:40px;padding-bottom:24px}.footer-top{display:flex;align-items
 @media print{.site-header,.site-footer,.cta-wrap,.article-cta{display:none}.article-header,.legal-header{background:white;color:black}.prose,.article-deck{color:black}}
 /* Progressive enhancement: retain the product tour when scripts are unavailable. */
 html:not(.js) [data-product-panel][hidden]{display:block!important;margin-top:32px}
+
+/* Homepage Option A trust strip — cream panel, navy page, existing tokens. */
+.trust-strip{padding-block:32px var(--space)}
+.trust-strip__panel{background:var(--paper);color:var(--paper-ink);border-radius:var(--radius);padding:40px 48px;display:grid;gap:28px}
+.trust-strip .eyebrow{display:flex;gap:12px;align-items:center;color:#766029;margin-bottom:16px}
+.trust-strip .short-rule{background:#766029}
+.trust-strip h2{font-size:clamp(2.1rem,3.6vw,3rem);letter-spacing:-.02em;color:var(--paper-ink);max-width:16ch}
+.trust-strip__points{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.trust-strip__points li{padding-top:16px;border-top:1px solid #d7dbd7;color:var(--paper-muted);font-size:1rem;line-height:1.6}
+.trust-strip .button{justify-self:start}
+@media(max-width:760px){
+  .trust-strip{padding-block:8px 40px}
+  .trust-strip__panel{padding:28px 24px;gap:24px}
+  .trust-strip h2{max-width:none}
+  .trust-strip__points{grid-template-columns:1fr;gap:0}
+  .trust-strip__points li{padding-block:16px}
+  .trust-strip__points li:last-child{padding-bottom:0}
+}
