@@ -28,4 +28,16 @@
     <loc>https://anchr.life/blog/936-saturdays-fatherhood/</loc>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://anchr.life/show-up-after-work/</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://anchr.life/reconnect-at-home/</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://anchr.life/meaningful-time-before-18/</loc>
+    <priority>0.7</priority>
+  </url>
 </urlset>
