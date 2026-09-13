@@ -7,6 +7,16 @@
   status = 301
 
 [[redirects]]
+  from = "/practice"
+  to = "/practice/"
+  status = 301
+
+[[redirects]]
+  from = "/about"
+  to = "/about/"
+  status = 301
+
+[[redirects]]
   from = "/privacy"
   to = "/privacy/"
   status = 301
